@@ -347,7 +347,8 @@ addToFileIfMissing "$userBashProfileFile" "^(export)? *PATH=.*(\\\$MonkeyDevPath
 iosSdkPlatformPath=`getSdkProperty iphoneos PlatformPath`
 macosSdkPlatformPath=`getSdkProperty macosx PlatformPath`
 
-specificationFile=$(cd $iosSdkPlatformPath/../../.. && pwd)/PlugIns/IDEiOSSupportCore.ideplugin/Contents/Resources/Embedded-Device.xcspec
+#specificationFile=$(cd $iosSdkPlatformPath/../../.. && pwd)/PlugIns/IDEiOSSupportCore.ideplugin/Contents/Resources/Embedded-Device.xcspec
+specificationFile=/Applications/Xcode.app/Contents/SharedFrameworks/XCBuild.framework/Versions/A/PlugIns/XCBBuildService.bundle/Contents/PlugIns/XCBSpecifications.ideplugin/Contents/Resources/Embedded-Device.xcspec
 
 requireFile "$specificationFile" false
 
